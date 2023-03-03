@@ -1,38 +1,6 @@
 {
   "users": [
-    {
-      "id": "af2303afnan",
-      "fname": "Afnan",
-      "lname": "Elhussini",
-      "address": "Mansoura",
-      "email": "afnan@gmail.com",
-      "age": "22",
-      "username": "afnan",
-      "password": "af2303afnan",
-      "flag": 2
-    },
-    {
-      "id": "afnansub123",
-      "fname": "AfnanSub",
-      "lname": "Admin",
-      "address": "Mansoura 2",
-      "email": "afnanSub@gmail.com",
-      "age": "24",
-      "username": "afnansub",
-      "password": "afnansub123",
-      "flag": 1
-    },
-    {
-      "id": "usernormal123",
-      "fname": "user",
-      "lname": "normal",
-      "address": "mansoura",
-      "email": "user@user.com",
-      "age": "23",
-      "username": "usernormal",
-      "password": "usernormal123",
-      "flag": 0
-    },
+    
     {
       "id": "j77jhx6a",
       "fname": "test",
