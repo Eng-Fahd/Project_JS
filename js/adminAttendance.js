@@ -45,12 +45,6 @@ function getdata() {
         // this is the time that the employee is actually here
         let cominghour = today.getHours();
 
-        // cominghour == 8:30  and  datehours == 8 // 0 // attendancetime
-        // cominghour == 9  and  datehours == 8 // 1 // late
-        // cominghour == 10 and  datehours == 8 // 2 // absencetim
-
-        
-
         console.log(cominghour, datehours);
         
         if (cominghour - datehours > 1) {

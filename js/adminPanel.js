@@ -257,8 +257,6 @@ fetch('http://localhost:5502/reports')
     });  
   });
 
-
-
 const reportContainer = document.querySelector('#reportContainer');
 var opt = {
   margin: 0.7,

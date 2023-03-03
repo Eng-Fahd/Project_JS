@@ -27,9 +27,6 @@ logout.addEventListener('click', function () {
 let jsarray2 = JSON.parse(sessionStorage.getItem('jsArray2'));
 console.log(jsarray2);
 
-
-
-
 let arr2 = [];
 let emptype = '';
 
@@ -89,7 +86,6 @@ xhr.onload = function () {
               absencetime = absencetime + arr2[g].absencetim;
               excusetims = excusetims + arr2[g].excuse;
 
-              
             }
           }
 
