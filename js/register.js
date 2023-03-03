@@ -117,7 +117,7 @@ form.addEventListener('submit', function (e) {
 });
 
 let sweetAlertFunction = (userdata) => {
-  fetch('http://localhost:5502/users')
+  fetch('http://localhost:3000/users')
     .then((response) => response.json())
     .then((data) => {
       let flag = 0;
@@ -157,7 +157,7 @@ let sweetAlertFunction = (userdata) => {
               Body: `Hello ${userdata.fname} ${userdata.lname} <br> <br> Your username is: ${userdata.username} <br> Your password is: ${userdata.password} <br> <br> Thank you for registering with us`,
             }).then((message) => console.log(message));
 
-            fetch('http://localhost:5502/users', {
+            fetch('http://localhost:3000/users', {
               method: 'POST',
               body: JSON.stringify(userdata),
               headers: {

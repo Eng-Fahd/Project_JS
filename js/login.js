@@ -37,7 +37,7 @@ login.addEventListener('click', function () {
 
 function getdata() {
   let xhr = new XMLHttpRequest();
-  xhr.open('get', 'http://localhost:5502/users');
+  xhr.open('get', 'http://localhost:3000/users');
   xhr.onload = function () {
     arr = JSON.parse(xhr.responseText);
     for (let i = 0; i < arr.length; i++) {

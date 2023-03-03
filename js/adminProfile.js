@@ -31,7 +31,7 @@ let arr2 = [];
 let emptype = '';
 
 let xhr = new XMLHttpRequest();
-xhr.open('get', `http://localhost:5502/users`);
+xhr.open('get', `http://localhost:3000/users`);
 xhr.onload = function () {
   let arr = JSON.parse(xhr.responseText);
   for (let i = 0; i < arr.length; i++) {
@@ -66,7 +66,7 @@ xhr.onload = function () {
       }
       
       $.getJSON(
-        `http://localhost:5502/reports/?userid=${arr[i].id}`,
+        `http://localhost:3000/reports/?userid=${arr[i].id}`,
         function (json) {
           arr2 = json;
           let attendanctime = 0;

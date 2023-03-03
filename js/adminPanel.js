@@ -6,7 +6,7 @@ logout.addEventListener('click', function () {
 });
 
 let xhr = new XMLHttpRequest();
-xhr.open('get', 'http://localhost:5502/users');
+xhr.open('get', 'http://localhost:3000/users');
 xhr.onload = function () {
   let arr = JSON.parse(xhr.responseText);
   let tr = '';
@@ -23,7 +23,7 @@ xhr.onload = function () {
   let excusetims = new Array(arr.length).fill(0);
   for (let i = 0; i < arr.length; i++) {
     $.getJSON(
-      `http://localhost:5502/reports/?userid=${arr[i].id}`,
+      `http://localhost:3000/reports/?userid=${arr[i].id}`,
       function (json) {
         arr2 = json;
         for (let g = 0; g < arr2.length; g++) {
@@ -91,7 +91,7 @@ const piechart = document.getElementById('piechart').getContext('2d');
 const polorchart2 = document.getElementById('polorchart').getContext('2d');
 const donutchart2 = document.getElementById('donutchart').getContext('2d');
 const barchart2 = document.getElementById('barchart').getContext('2d');
-fetch('http://localhost:5502/users')
+fetch('http://localhost:3000/users')
   .then((res) => res.json())
   .then((data) => {
     // make chart by address
@@ -208,7 +208,7 @@ fetch('http://localhost:5502/users')
   });
 
 // make chart by time
-fetch('http://localhost:5502/reports')
+fetch('http://localhost:3000/reports')
   .then((res) => res.json())
   .then((data) => {
     console.log(data);
