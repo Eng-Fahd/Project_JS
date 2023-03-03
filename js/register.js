@@ -149,10 +149,10 @@ let sweetAlertFunction = (userdata) => {
             Email.send({
               SecureToken:'6c772e1f-2b7c-43ad-a0f1-586461b19b93',
               Host: 'smtp.elasticemail.com',
-              Username: 'afnanrlhussini23@gmail.com',
+              Username: 'fahd.kh@gmail.com',
               Password: 'FD6EDB42D9FEA8EC1B85B23561DC6E7C3282',
               To: `${userdata.email}`,
-              From: 'afnanrlhussini23@gmail.com',
+              From: 'fahd.kh@gmail.com',
               Subject: `Welcome ${userdata.fname}`,
               Body: `Hello ${userdata.fname} ${userdata.lname} <br> <br> Your username is: ${userdata.username} <br> Your password is: ${userdata.password} <br> <br> Thank you for registering with us`,
             }).then((message) => console.log(message));
