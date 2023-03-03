@@ -9,6 +9,6 @@
   "scripts": {
     "json:server": "json-server --watch data.json"
   },
-  "author": "mostafa",
+  "author": "Mohammed",
   "license": "ISC"
 }

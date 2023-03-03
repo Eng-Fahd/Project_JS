@@ -26,7 +26,7 @@ logout.addEventListener('click', function () {
 let arr2 = [];
 searchBtn.addEventListener('click', function (e) {
   let xhr = new XMLHttpRequest();
-  xhr.open('get', `http://localhost:3000/users`);
+  xhr.open('get', `http://localhost:5502/users`);
   xhr.onload = function () {
     let arr = JSON.parse(xhr.responseText);
     arr = arr.filter((item) => item.username == tex.value);
@@ -36,7 +36,7 @@ searchBtn.addEventListener('click', function (e) {
     for (let i = 0; i < arr.length; i++) {
       if (arr[i].username == tex.value) {
         let xhr2 = new XMLHttpRequest();
-        xhr2.open('get', `http://localhost:3000/reports`);
+        xhr2.open('get', `http://localhost:5502/reports`);
         xhr2.onload = function () {
           let arr2 = JSON.parse(xhr2.responseText);
           arr2 = arr2.filter((item) => item.userid == arr[i].id);

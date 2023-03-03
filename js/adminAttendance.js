@@ -15,8 +15,8 @@ function getdata() {
   let xhr = new XMLHttpRequest();
   let xhr2 = new XMLHttpRequest();
   let repoid = 0;
-  xhr.open('get', 'http://localhost:3000/users');
-  xhr2.open('get', 'http://localhost:3000/reports');
+  xhr.open('get', 'http://localhost:5502/users');
+  xhr2.open('get', 'http://localhost:5502/reports');
 
   xhr.onload = function () {
     let arr = JSON.parse(xhr.responseText);
@@ -120,7 +120,7 @@ function getdata() {
 
 function senddata(dataSent) {
   $.ajax({
-    url: 'http://localhost:3000/reports',
+    url: 'http://localhost:5502/reports',
     type: 'post',
     dataType: 'json',
     contentType: 'application/json',
@@ -151,12 +151,12 @@ excuse.addEventListener('click', function () {
 
 function makeExcuse() {
   let xhr = new XMLHttpRequest();
-  xhr.open('get', 'http://localhost:3000/users');
+  xhr.open('get', 'http://localhost:5502/users');
   xhr.onload = function () {
     let arr = JSON.parse(xhr.responseText);
     for (let i = 0; i < arr.length; i++) {
       if (arr[i].username == user.value) {
-        fetch('http://localhost:3000/reports?userid=' + arr[i].id, {
+        fetch('http://localhost:5502/reports?userid=' + arr[i].id, {
           method: 'GET',
         })
           .then((response) => response.json())
@@ -164,7 +164,7 @@ function makeExcuse() {
             console.log(data);
             let last = data.length - 1;
             console.log(data[last].id);
-            fetch('http://localhost:3000/reports/' + data[last].id, {
+            fetch('http://localhost:5502/reports/' + data[last].id, {
               method: 'PATCH',
               body: JSON.stringify({
                 // add excuse +1
