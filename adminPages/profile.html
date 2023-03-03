@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Profile Page</title>
+
+
+
+</head>
+
+<body style="background-color:  rgb(207, 228, 245);">
+  <nav class="navbar navbar-expand-md bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">
+        <img src="../img/logo.png" alt="" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  fw-bold" aria-current="page" href="attendance.html">Take Attendance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" href="profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="report.html">Reports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  fw-bold" href="adminpanel.html">Admin Panel</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-danger btn-outline-danger text-white" id="logout">
+              Log Out
+              <i class="bi bi-door-open"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <section class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <div class="card h-100">
+          <div class="card-body h-100 d-flex flex-column align-items-center  justify-content-center">
+            <div class="d-flex flex-column align-items-center  justify-content-center text-center">
+              <div class="mt-3">
+                <i class="bi bi-person-circle fs-1"></i>
+                <h2 id="name">name</h2>
+                <p id="username2" class="text-muted h5">username</p>
+                <p id="categry" class="text-success h5">categry</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-6 h-100">
+        <div class="card mb-3 h-100">
+          <div class="card-body h-100">
+            <div class="row">
+              <div class="col-sm-6">
+                <h6 class="mb-0">username</h6>
+              </div>
+              <div id="username" class="col-sm-6 text-secondary">
+                username
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-6">
+                <h6 class="mb-0">Email</h6>
+              </div>
+              <div id="email" class="col-sm-6 text-secondary">
+                email
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-6">
+                <h6 class="mb-0">Address</h6>
+              </div>
+              <div id="address" class="col-sm-6 text-secondary">
+                address
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-6">
+                <h6 class="mb-0">Age</h6>
+              </div>
+              <div id="age" class="col-sm-6 text-secondary">
+                Age
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+
+            <h5 class="text-primary">Last Login Time:</h5>
+            <div class="">
+              <input type="text" id="attime" value="" class="form-control  mb-2 text-dark  " disabled>
+            </div>
+
+            <hr>
+
+            <h5 class="text-primary">
+              <script>
+                var today = new Date();
+                var dd = String(today.getDate());
+                var mm = String(today.getMonth() + 1)
+                var yyyy = today.getFullYear();
+
+                today = + dd + '/' + mm + '/' + yyyy;
+                document.write(today);
+              </script>
+
+
+              Status
+            </h5>
+
+            <h5 class="text-primary">Late:</h5>
+            <div class="">
+              <input type="text" id="late" value="" class="form-control  mb-2 text-dark  " disabled>
+            </div>
+            <h5 class="text-primary">Excuse:</h5>
+            <div class="">
+              <input type="text" id="excuse" value="" class="form-control  mb-2 text-dark  " disabled>
+            </div>
+            <h5 class="text-primary">Absencet:</h5>
+            <div class="">
+              <input type="abcent" id="absc" value="" class="form-control  mb-2 text-dark  " disabled>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h4 class="d-flex align-items-center mb-3">
+              <!-- get month -->
+              This Month Basic Information
+            </h4>
+            <h5 class="text-primary">Attendance Times:</h5>
+            <div class="">
+              <input type="text" id="attimes" value="" class="form-control  mb-2 text-dark  " disabled>
+            </div>
+            <h5 class="text-primary">Late Times:</h5>
+            <div class="">
+              <input type="text" id="lates" value="" class="form-control  mb-2 text-dark  " disabled>
+            </div>
+            <h5 class="text-primary">Excuse Times:</h5>
+            <div class="">
+              <input type="text" id="excuses" value="" class="form-control  mb-2 text-dark  " disabled>
+            </div>
+            <h5 class="text-primary">Absencet Times:</h5>
+            <div class="">
+              <input type="abcent" id="abscs" value="" class="form-control  mb-2 text-dark  " disabled>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery.js"></script>
+
+  <script src="../js/adminProfile.js"></script>
+</body>
+
+</html>
