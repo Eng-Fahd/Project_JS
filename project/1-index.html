@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Attendance System</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/1-index.css" rel="stylesheet" />
+    
+  </head>
+  <body>
+    <div class="container inner ">
+      
+      <div class="row">
+        <div class="col-12 header">
+          <h2 class="d-flex justify-content-center">Welcome to Attendance System</h2>
+        </div>
+      </div>
+
+      <div class="row flex" >
+        <div class="col-sm-12 col-md-6">
+          <p class="font-weight-bold">
+              The attendance system is used to monitor the attendance and 
+              movement of employees within their working hours 
+              and to prepare materials for processing wages.
+          </p>
+          <p class="font-weight-bold">
+              A smart attendance management system will help you track employee hours,
+              ensuring there are no policy or regulatory violations.
+          </p>
+          <p class="font-weight-bold">
+              It helps you to control work hours, manage earnings and costs. 
+              Increase your productivity today by eliminating hours of paperwork.
+          </p>
+          <p class="font-weight-bold">
+            Attendance management systems powered with advanced analytics offer granular 
+            visibility into attendance patterns, highlighting those who frequently put in
+            overtime or diverge from scheduled hours. Behaviors like these can be duly noted 
+            and rectified, upholding optimal productivity levels in the office.
+        </p>  
+
+              
+        </div>
+        <div class="col-6 d-none d-md-block">
+          <img src="images/1.jpg" width="550px" height="350px" />
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-12 col-md-4">
+          <i class="fa fa-users text-danger fa-3x"></i>
+          <h3 class="partsHead"> Admin and Users </h3>
+          <p class="font-weight-bold"> System has two types of users </p>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <i class="fa fa-database text-danger fa-3x"></i>
+          <h3 class="partsHead"> Storage </h3>
+          <p class="font-weight-bold"> Secure and Accessible Data </p>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <i class="fa fa-table text-danger fa-3x"></i>
+          <h3 class="partsHead"> Tables and Charts </h3>
+          <p class="font-weight-bold"> Report contains details and attendance time </p>
+        </div>
+
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <form  id="" action="" method="POST" >
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="">First Name</label>
+							<input name="first_name" id="fname" type="text" class="form-control" placeholder="First Name">
+							<span id="userfnameerror">User Name Is Invalid</span>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="">Last Name</label>
+							<input name="last_name" id="lname" type="text" class="form-control" placeholder="Last Name">
+							<span id="userlnameerror">User Name Is Invalid</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="">Email</label>
+							<input name="email" id="e_mail" type="text" class="form-control" placeholder="E-mail">
+							<span id="useremailerror">User Email Is Invalid</span>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="">Address</label>
+							<input name="address" id="add" type="text" class="form-control" placeholder="Address">
+							<span id="useradderror">User Address Is Invalid</span>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="">Age</label>
+							<input name="age" id="age" type="text" class="form-control" placeholder="Age">
+							<span id="userageerror">User Age Is Invalid</span>
+            </div>
+            </div>
+          <div class="col-md-6">
+            <!-- <button type="submit" id="regbtn" class="btn btn-outline-primary ">Register</button> -->
+            <input type="submit" class="btn btn-outline-primary"  value="Register" id="regbtn" disabled />
+            <input type="button" class="btn btn-outline-secondary"  value="Login" id="loginbtn">
+      
+          </div>
+        </form>
+        
+        
+      </div>
+    </div>
+
+    <script src="js/JQuery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/1-index.js"></script>
+  </body>
+</html>
