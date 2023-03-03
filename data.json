@@ -1,5 +1,6 @@
 {
   "users": [
+    
     {
       "id": "af2303afnan",
       "fname": "Afnan",
@@ -21,12 +22,34 @@
       "username": "afnansub",
       "password": "afnansub123",
       "flag": 1
+    },
+    {
+      "id": "usernormal123",
+      "fname": "user",
+      "lname": "normal",
+      "address": "mansoura",
+      "email": "user@user.com",
+      "age": "23",
+      "username": "usernormal",
+      "password": "usernormal123",
+      "flag": 0
+    },
+    {
+      "id": "j77jhx6a",
+      "fname": "test",
+      "lname": "test",
+      "address": "test adress",
+      "email": "test@test.com",
+      "age": "20",
+      "username": "test25te",
+      "password": "j77jhx6a",
+      "flag": 0
     }
   ],
   "reports": [
     {
-      "id": 1,
-      "userid": "af2303afnan",
+      "id": "Muhammed Emam",
+      "userid": "2303",
       "date": "2023-1-24",
       "time": "4:1:57",
       "attendance": 1,
@@ -35,8 +58,8 @@
       "absencetim": 0
     },
     {
-      "id": 3,
-      "userid": "afnansub123",
+      "id": "Fahd Khaled",
+      "userid": "nansub123",
       "date": "2023-1-24",
       "time": "4:48:39",
       "attendance": 1,
@@ -56,7 +79,7 @@
     },
     {
       "id": 5,
-      "userid": "af2303afnan",
+      "userid": "2303an",
       "date": "2023-1-24",
       "time": "12:49:36",
       "attendance": 0,
@@ -66,7 +89,7 @@
     },
     {
       "id": 8,
-      "userid": "af2303afnan",
+      "userid": "af2303a",
       "date": "2023-1-24",
       "time": "15:28:25",
       "attendance": 0,
@@ -76,9 +99,79 @@
     },
     {
       "id": 9,
-      "userid": "af2303afnan",
+      "userid": "af2303",
       "date": "2023-1-24",
       "time": "17:45:14",
+      "attendance": 0,
+      "late": 0,
+      "excuse": 0,
+      "absencetim": 1
+    },
+    {
+      "id": 10,
+      "userid": "af2303afnan",
+      "date": "2023-1-24",
+      "time": "17:45:30",
+      "attendance": 0,
+      "late": 0,
+      "excuse": 0,
+      "absencetim": 1
+    },
+    {
+      "id": 11,
+      "userid": "af2303afnan",
+      "date": "2023-1-24",
+      "time": "17:55:21",
+      "attendance": 0,
+      "late": 0,
+      "excuse": 2,
+      "absencetim": 1
+    },
+    {
+      "id": 12,
+      "userid": "usernormal123",
+      "date": "2023-1-24",
+      "time": "21:42:43",
+      "attendance": 0,
+      "late": 0,
+      "excuse": 1,
+      "absencetim": 1
+    },
+    {
+      "id": 13,
+      "userid": "s60a83yy",
+      "date": "2023-1-24",
+      "time": "22:5:15",
+      "attendance": 0,
+      "late": 0,
+      "excuse": 0,
+      "absencetim": 1
+    },
+    {
+      "id": 14,
+      "userid": "s60a83yy",
+      "date": "2023-1-24",
+      "time": "22:6:51",
+      "attendance": 0,
+      "late": 0,
+      "excuse": 0,
+      "absencetim": 1
+    },
+    {
+      "id": 15,
+      "userid": "af2303afnan",
+      "date": "2023-1-24",
+      "time": "22:17:11",
+      "attendance": 0,
+      "late": 0,
+      "excuse": 0,
+      "absencetim": 1
+    },
+    {
+      "id": 16,
+      "userid": "af2303afnan",
+      "date": "2023-1-25",
+      "time": "22:53:10",
       "attendance": 0,
       "late": 0,
       "excuse": 0,
